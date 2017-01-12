@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/style.css">
+<div class="chat">
+<div class="chat-title">
+	<h1>iica</h1>
+	<h2>test my brain</h2>
+	<figure class="avatar">
+		<img src="styles/images/botim.png" /></figure>
+</div>
+<div class="messages">
+	<div class="messages-content">{{greeting.content}}</div>
+</div>
+	<form ng-submit="sendInput()" my-enter="sendInput()">
+		<div class="message-box">
+	<div id="results">
+          
+        </div>
+					 
+		<textarea type="text" class="message-input" id="textModel" ng-model="textModel" placeholder="Type message..."><span class="final" id="final_span"></span></textarea>
+	
+		
+		<button type="submit" class="message-submit">Send</button>
+		</div>
+	</form>
+</div>
